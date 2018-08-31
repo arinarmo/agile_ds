@@ -5,12 +5,12 @@
 _Agile_ es un conjunto de **metodos y metodologías** diseñados para lidiar con  ciertos problemas comunes en el
 desarrollo de _software_. Son relativamente sencillos de entender y de implementar.
 
-Estas metodologías abarcan todas las áreas del desarrollo de _software_, incluyendo _project management_, 
-_software design_ y _process improvement_. Cada uno de estos métodos consiste de **prácticas** que están diseñadas 
+Estas metodologías abarcan todas las áreas del desarrollo de _software_, incluyendo _project management_,
+_software design_ y _process improvement_. Cada uno de estos métodos consiste de **prácticas** que están diseñadas
 para su fácil adopción.
 
 _Agile_ también es un _mindset_, enfocado en la colaboración y la comunicación. Idealmente, el equipo completo 
-participa en la planeación y la toma de decisiones del proyecto, en lugar de que lo dicte un jefe o _project manager_. 
+participa en la planeación y la toma de decisiones del proyecto, en lugar de que lo dicte un jefe o _project manager_.
 Para lograr que todo el equipo adopte un _mindset_ efectivo, cada metodología ágil cuenta con un conjunto de 
 **valores** que sirven como guía.
 
@@ -200,7 +200,66 @@ Estos elementos básicos nos permitirán introducir conceptos más complejos con
 ### La historia completa
 
 git guarda cada _commit_ de cada _branch_ en la carpeta `.git`. Esta carpeta se localiza en la carpeta raíz de nuestro
-repositorio.
+repositorio. Sin esta carpeta especial, nuestro repositorio no tiene ninguna de las capacidades de git, y es una
+simple carpeta.
+
+### Staging
+
+Para realizar un _commit_, es necesario agregar archivos que hayan cambiado al _stage_, una vez añadidos, podemos
+realizar un _commit_ y agregar un breve mensaje explicando estos cambios.
+
+### Comandos básicos
+* `git clone`: Replica un repositorio remoto en nuestra máquina local
+* `git diff`: Muestra diferencias que no estén en _staging
+* `git add`: Agrega archivos al _stage_.
+* `git status`: Muestra posibles cambios a agregar al _stage_
+* `git commit -m`: Hace _commit_  de los cambios en el _strage_
+* `git stash`: Toma los cambios no agregados al _stage_ y los pone en el _stash_
+
+### Ejercicio: `git diff` y `git add`
+
+### `git config`
+
+Antes de poder hacer commits, debemos indicarle a git ciertas configuraciones. Ya que git lleva el control de qué
+usuarios hicieron qué _commits_, es necesario configurar nuestra identidad en git
+
+Además, las opciones de `git config` nos permiten comportar cierto comportamiento básico, como que editor se usa por
+defecto para editar mensajes de _commit_
+
+### Ejercicio: `git config`
+
+### Ejercicio: `git commit` y `git log`
+
+### ¿Cómo guarda Git la información?
+
+![](resources/commit-tree-blob.png)
+
+### ¿Cómo funcionan los _commits_?
+
+Cada _commit_ a un repositorio es identificado a través de un **hash**, (resultado de una función _hash_) que 
+reduce bloques de texto a una cadena de caracteres, por ejemplo `7c35a3ce607a14953f070f0f83b5d74c2296ef93`. Esto permite
+no sólo identificar únicamente una versión específica de los archivos especificados, sino que asegura que no se pueden
+introducir cambios malicios fácilmente.
+
+* `git show <commit hash>` muestra los cambios que realizó el _commit_ correspondiente
+
+### `git blame` y `git annotate`
+
+Muestran los commits que modificaron cada línea en un archivo, con la referencia _hash_ del último _commit_ que la 
+modificó y el usuario responsable de ese _commit_.
+
+La única diferencia entre estos dos commandos es como muestran la salida.
+
+### `.gitignore`
+
+En este archivo especial podemos especificar reglas para que git ignore los archivos que se especifican en él. Podemos
+incluir reglas genéricas para algunos tipos de archivos, poe ejemplo `*.csv`
+
+### Ejercicio: `.gitignore`
+
+### Branches
+
+Hasta ahora hemos trabajado en una sola rama, `master`, uno de los _features_ más poderosos de git. 
 
 ## git para Ciencia de Datos
 
