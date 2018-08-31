@@ -105,7 +105,34 @@ _feature_ o tarea. Típicamente hay 4 niveles: _Comfort_, _Discretionary Money_,
 
 En la Ciencia de Datos, como en el desarrollo de _software_, equipos colaboran para entregar valor a través de
 procesos complejos: diseño, análisis, programación, etc. Las metodologías ágiles proveen una manera de organizar
-este trabajo 
+este trabajo y asegurar que entreguemos valor de una manera consistente y temprana.
+
+Algunos aspectos de la metodología ágil aplican especialmente a la Ciencia de Datos:
+
+### La importancia de iterar
+
+Dificilmente se logra tener un análisis certero o un producto de Ciencia de Datos terminado "a la primera". A menudo
+se requiere iterar. Si logramos entregar valor en cada ciclo de desarrollo, naturalmente iteramos de una manera
+eficiente
+
+### Entregar salidas intermedias
+
+Como en el desarrollo de _software_, un problema frecuente en la Ciencia de Datos es que el análisis realizado o
+los modelos predictivos construidos pueden no ser lo que se esperaba por el cliente. Mientras más tiempo pase entre
+la especificación y la entrega, es más probable que surjan malentendidos y sea difícil ajustar requerimientos. Planear
+entregables "pequeños" nos ayuda a validar la ruta que estamos tomando, y adaptarnos al cambio en los requerimientos
+o a la llegada de nueva información
+
+### ¿Experimentos o tareas?
+
+A diferencia de la ingeniería o el desarrollo de _software_, la **ciencia** de datos se basa en experimentos. Un
+resultado negativo es un resultado valioso y debe ser tomado como tal. Es importante que al organizar el trabajo y 
+definir metas para un ciclo de desarrollo se tenga claro qué consiste en un experimento y qué en una tarea. Intentar
+encontrar un modelo predictivo para algún fenómeno de interés dados ciertos datos puede verse como un experimento,
+mientras que preparar este modelo para su uso en un sistema es más claramente una tarea.
+
+******
+
 
 ## Primera herramienta: Git
 
