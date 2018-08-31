@@ -193,6 +193,7 @@ equivale a cambiar el _HEAD_
 * **_Checkout_**: Quiere decir mover el proyecto actual a un _HEAD_ en particular.
 * **_Branch_**: Las ramas de git nos permiten trabajar en paralelo sobre el mismo proyecto, sin temor de sobreescribir
 cambios de alguien más. También son útiles para separar unidades de trabajo. Podemos hacer _checkout_ a una rama.
+* **_Clone_**: El acto de copiar un repositorio (típicamente remoto) a una ubicación específica (típicamente local)
 
 Estos elementos básicos nos permitirán introducir conceptos más complejos conforme avancemos.
 
