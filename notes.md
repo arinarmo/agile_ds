@@ -2,22 +2,19 @@
 
 ## Metodologías _Agile_
 
-_Agile_ es un conjunto de **metodos y metodologías** diseñados para lidiar con 
-ciertos problemas comunes en el desarrollo de _software_. Son relativamente
-sencillos de entender y de implementar.
+_Agile_ es un conjunto de **metodos y metodologías** diseñados para lidiar con  ciertos problemas comunes en el
+desarrollo de _software_. Son relativamente sencillos de entender y de implementar.
 
-Estas metodologías abarcan todas las áreas del desarrollo de _software_, incluyendo
-_project management_, _software design_ y _process improvement_. Cada uno de estos
-métodos consiste de **prácticas** que están diseñadas para su fácil adopción.
+Estas metodologías abarcan todas las áreas del desarrollo de _software_, incluyendo _project management_, 
+_software design_ y _process improvement_. Cada uno de estos métodos consiste de **prácticas** que están diseñadas 
+para su fácil adopción.
 
-_Agile_ también es un _mindset_, enfocado en la colaboración y la comunicación.
-Idealmente, el equipo completo participa en la planeación y la toma de decisiones del
-proyecto, en lugar de que lo dicte un jefe o _project manager_. Para lograr que todo
-el equipo adopte un _mindset_ efectivo, cada metodología ágil cuenta con un conjunto
-de **valores** que se pueden usar como guía.
+_Agile_ también es un _mindset_, enfocado en la colaboración y la comunicación. Idealmente, el equipo completo 
+participa en la planeación y la toma de decisiones del proyecto, en lugar de que lo dicte un jefe o _project manager_. 
+Para lograr que todo el equipo adopte un _mindset_ efectivo, cada metodología ágil cuenta con un conjunto de 
+**valores** que sirven como guía.
 
-Aunque algunas prácticas ágiles pueden dar resultado por si mismas, es necesaria la 
-adopción del _mindset_ correcto para que su eficacia sea lo mayor posible.
+Aunque algunas prácticas ágiles pueden dar resultado por si mismas, es necesaria la adopción del _mindset_ correcto para que su eficacia sea lo mayor posible.
 
 ### ¿Por qué _Agile_?
 
@@ -29,24 +26,21 @@ adopción del _mindset_ correcto para que su eficacia sea lo mayor posible.
 
 ### Ejemplo: _Daily Standup_
 
-Una práctica fácil de adoptar es el _standup_ diario, en el cual los miembros del equipo
-hablan acerca del trabajo que están realizando y los retos y bloqueos que se encuentran
-en este proceso. Esta "junta" debe de ser corta y concisa, por lo que los miembros del 
-equipo deben mantenerse de pie durante la duración de la misma.
+Una práctica fácil de adoptar es el _standup_ diario, en el cual los miembros del equipo hablan acerca del trabajo que 
+están realizando y los retos y bloqueos que se encuentran en este proceso. Esta "junta" debe de ser corta y concisa, por 
+lo que los miembros del equipo deben mantenerse de pie durante la duración de la misma.
 
 Durante un _standup_ diario:
 * Se da la comunicación entre miembros del equipo
 * La colaboración sucede cuando se describe un problema que otro miembro puede ayudar a resolver
 * El o los líderes del proyecto se mantienen al tanto del estatus del proyect
 
-Aunque es una práctica sencilla, que da resultados en si misma, el _standup_ diario
-es particularmente efectivo cuando todos los miembros del equipo se mantienen atentos
-durante toda la junta, y tienen la actitud correcta hacia ella. Si algunos miembros
-del equipo sienten que están siendo obligados a estar en una junta innecesaria, en lugar
-de ver el beneficio que les trae explicar su trabajo y escuchar el de los demás, la 
-efectividad de esta práctica disminuye. Del mismo modo, si el líder del proyecto lo 
-toma como una oportunidad para exigir o reprender, o si se ve como un mecanismo de 
-reporte ante el jefe, la práctica no logra su cometido deseado.
+Aunque es una práctica sencilla, que da resultados en si misma, el _standup_ diario es particularmente efectivo cuando
+todos los miembros del equipo se mantienen atentos durante toda la junta, y tienen la actitud correcta hacia ella. Si 
+algunos miembros del equipo sienten que están siendo obligados a estar en una junta innecesaria, en lugar de ver el
+beneficio que les trae explicar su trabajo y escuchar el de los demás, la  efectividad de esta práctica disminuye. 
+Del mismo modo, si el líder del proyecto lo  toma como una oportunidad para exigir o reprender, o si se ve como un
+mecanismo de reporte ante el jefe, la práctica no logra su cometido deseado.
 
 ### Valores
 
@@ -54,10 +48,6 @@ reporte ante el jefe, la práctica no logra su cometido deseado.
 * **_Software_ funcional** sobre documentación comprehensiva
 * **Colaboración con el cliente** sobre negociación de contrato
 * **Responder al cambio** sobre seguir un plan
-
-### Principios 
-
-1. 
 
 ## Algunas Metodologías _Agile_
 
@@ -77,9 +67,22 @@ _scrum master_, quien organiza el _standup_ diario y guía el equipo en la metod
 Estos roles pueden ser fijos o pasar periódicamente a diferentes miembros del equipo.
 
 
-### Kanban
+### Tablero Kanban
 
-Desarrollado en Toyota para la producción
+Desarrollado en los 40s por Toyota para manufactura e ingeniería. Es una manera visual de mostrar que partes se 
+necesitan y cuál es el estatus de cada una. En la actualidad se utiliza para llevar el control de tareas en 
+metodologías ágiles. Consiste en un tablero (físico o digital) dividido en columnas, en las cuales se colocan
+tarjetas, cada una representando una tarea, y se asignan a la columna correspondiente según su estatus. Podemos
+usar colores para representar algún detalle importante de la tarea: tipo de tarea, urgencia, etc.
+
+Cada equipo puede diseñar su tablero según considere conveniente, pero es importante mantener algunas reglas básicas:
+
+* Las tareas se mueven de izquierda a derecha conforme se realizan
+* La primera columna debe representar el _backlog_ de tareas. Aquí se agregan tareas nuevas
+* La última columan representa tareas terminadas.
+
+A menudo, un Tablero Kanban se combina con alguna otra metodología ágil para lograr tanto una planeación efectiva como
+una organización visual del avance del proyecto.
 
 ### Otras
 
@@ -100,6 +103,9 @@ _feature_ o tarea. Típicamente hay 4 niveles: _Comfort_, _Discretionary Money_,
  
 ## _Agile_ en la Ciencia de Datos
 
+En la Ciencia de Datos, como en el desarrollo de _software_, equipos colaboran para entregar valor a través de
+procesos complejos: diseño, análisis, programación, etc. Las metodologías ágiles proveen una manera de organizar
+este trabajo 
 
 ## Primera herramienta: Git
 
