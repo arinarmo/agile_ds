@@ -18,6 +18,8 @@ Aunque algunas prácticas ágiles pueden dar resultado por si mismas, es necesar
 
 ### ¿Por qué _Agile_?
 
+![](resources/planning.png)
+
 * Es más fácil lograr cumplir los objetivos antes de la fecha límite
 * Surgen muchos menos _bugs_ en el código o proyecto
 * El código o proyecto se vuelve más fácil de mantener
@@ -84,6 +86,8 @@ Cada equipo puede diseñar su tablero según considere conveniente, pero es impo
 A menudo, un Tablero Kanban se combina con alguna otra metodología ágil para lograr tanto una planeación efectiva como
 una organización visual del avance del proyecto.
 
+![](resources/kanban.jpg)
+
 ### Otras
 
 **XP**: eXtreme Programming, es una metodología basada en aceptar el cambio y desarrollar 
@@ -115,13 +119,19 @@ Dificilmente se logra tener un análisis certero o un producto de Ciencia de Dat
 se requiere iterar. Si logramos entregar valor en cada ciclo de desarrollo, naturalmente iteramos de una manera
 eficiente
 
-### Entregar salidas intermedias
+### Entregar resultados intermedios
 
 Como en el desarrollo de _software_, un problema frecuente en la Ciencia de Datos es que el análisis realizado o
 los modelos predictivos construidos pueden no ser lo que se esperaba por el cliente. Mientras más tiempo pase entre
 la especificación y la entrega, es más probable que surjan malentendidos y sea difícil ajustar requerimientos. Planear
 entregables "pequeños" nos ayuda a validar la ruta que estamos tomando, y adaptarnos al cambio en los requerimientos
 o a la llegada de nueva información
+
+*****
+
+Así como hay aspectos donde la aplicación de metodologías ágiles no difiere entre la ciencia de datos y el desarrollo
+de _software_, hay consideraciones especiales que se deben hacer en un proyecto de ciencia de datos al usar estas
+metodologías, que dificilmente surgen en un proyecto de _software_
 
 ### ¿Experimentos o tareas?
 
@@ -131,17 +141,78 @@ definir metas para un ciclo de desarrollo se tenga claro qué consiste en un exp
 encontrar un modelo predictivo para algún fenómeno de interés dados ciertos datos puede verse como un experimento,
 mientras que preparar este modelo para su uso en un sistema es más claramente una tarea.
 
-******
+### Escucha a los datos
+
+Al planear, organizar trabajo y decidir un _backlog_, es importante tomar en cuenta lo que nos dicen los datos. 
+¿Hay algún _insight_ nuevo que nos indique la necesidad de cambiar la dirección del proyecto? Es bueno intentar 
+analizar esto a partir de visualizaciones y análisis exploratorio. 
 
 
-## Primera herramienta: Git
+### Usa la "pirámide de valor de datos"
 
-## Git para Ciencia de Datos
+Esta pirámide expresa el valor creciente que se obtiene de analizar datos. Empezamos por convertirlos en tablas y
+gráficas, pasamos a reportes, predicciones, y finalmente, acciones habilitadas por todo lo anterior. Mientras más
+robustos sean los niveles inferiores, más seguros estarán los superiores. 
+
+![](resources/pyramid.png)
+
+Esta pirámide da estructura a nuestro trabajo, indicando posibles resultados intermedios. La pirámide es una guía, no
+una regla a seguir. A veces podemos saltarnos pasos o trabajar "hacia abajo".
+
+### Habla del proceso
+
+Una buena regla a seguir para lograr entregas intermedias es, que si aún no logramos tener un entregable concreto o
+algunos _insights_ que nos ayuden a vender nuestro trabajo, podemos hablar del proceso que estamos siguiendo y
+entregar eso: ¿Qué dificultades existen para realizar el análisis? ¿Por qué creemos que nuestras predicciones no 
+resultaron buenas? ¿Qué datos nos gustaría tener?
+
+Respuestas a estas preguntas son buenos entregables de un experimento, pues nos permiten guíar el proceso científico
+y escalar la pirámide.
+
+## Herramienta: Control de versiones (git)
+
+Una de las herramientas más útiles para colaborar en un proyecto de Ciencia de Datos es una herramienta de control
+de versiones. Este tipo de herramientas nos permiten mantener la historia de todos los cambios que se han hecho
+al proyecto, marcando cada uno de ellos de manera incremental. En particular, utilizaremos git, el estándar en
+la industria para control de versiones desde hace varios años.
+
+Algunas características:
+* Nada que se registre en git se pierde jamás. Siempre podemos regresar a una versión anterior de nuestro proyecto
+* git nos notifica cuando nuestro trabajo entra en conflicto con el de alguien más, pues cambiamos el mismo archivo 
+de una manera incompatible. Esto hace más difícil sobreescribir el trabajo de alguien más.
+* Con un servidor de git, podemos sincronizar el trabajo hecho por varias personas en sus máquinas.
+
+### Conceptos básicos y vocabulario
+
+* **Repositorio**: Es donde se encuentra nuestro trabajo. Dependiendo del tamaño y complejidad del proyecto podemos
+tener uno o varios repositorios de git
+* **_Commit_**: Es la acción de registrar un cambio incremental a git. Va acompañado de un mensaje corto, describiendo
+en breves palabras este cambio. Es la unidad básica de la historia de git.
+* **_HEAD_**: El _commit_ en el que se encuentra la versión local de nuestro repositorio. Moverse en la historia 
+equivale a cambiar el _HEAD_
+* **_Checkout_**: Quiere decir mover el proyecto actual a un _HEAD_ en particular.
+* **_Branch_**: Las ramas de git nos permiten trabajar en paralelo sobre el mismo proyecto, sin temor de sobreescribir
+cambios de alguien más. También son útiles para separar unidades de trabajo. Podemos hacer _checkout_ a una rama.
+
+Estos elementos básicos nos permitirán introducir conceptos más complejos conforme avancemos.
+
+### La historia completa
+
+git guarda cada _commit_ de cada _branch_ en la carpeta `.git`. Esta carpeta se localiza en la carpeta raíz de nuestro
+repositorio.
+
+## git para Ciencia de Datos
 
 ## Segunda herramienta: Kanban
 
 ## Kanban para Ciencia de Datos
 
-## Combinando Git y Kanban
+## Combinando git y Kanban
 
-## Referencias
+## Lecturas recomendadas
+
+* [Head-First Agile](http://shop.oreilly.com/product/0636920022374.do)
+* [What is a Kanban Board?](https://leankit.com/learn/kanban/kanban-board/)
+* [A manifesto for Agile Data Science](https://www.oreilly.com/ideas/a-manifesto-for-agile-data-science)
+* [Agile Data Science 2.0](http://shop.oreilly.com/product/0636920051619.do)
+* [A successful git branching model](https://nvie.com/posts/a-successful-git-branching-model/)
