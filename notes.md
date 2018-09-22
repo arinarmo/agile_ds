@@ -261,13 +261,11 @@ incluir reglas genéricas para algunos tipos de archivos, poe ejemplo `*.csv`
 
 Hasta ahora hemos trabajado en una sola rama, `master`, uno de los _features_ más poderosos de git. 
 
-## git para Ciencia de Datos
+### Remote
 
-## Segunda herramienta: Kanban
+### Workflows
 
-## Kanban para Ciencia de Datos
-
-## Combinando git y Kanban
+## Combinando git y Kanban para aplicar Scrum
 
 ## Lecturas recomendadas
 
@@ -276,3 +274,4 @@ Hasta ahora hemos trabajado en una sola rama, `master`, uno de los _features_ m�
 * [A manifesto for Agile Data Science](https://www.oreilly.com/ideas/a-manifesto-for-agile-data-science)
 * [Agile Data Science 2.0](http://shop.oreilly.com/product/0636920051619.do)
 * [A successful git branching model](https://nvie.com/posts/a-successful-git-branching-model/)
+* [Comparing Workflows](https://www.atlassian.com/git/tutorials/comparing-workflows)
